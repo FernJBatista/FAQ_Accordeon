@@ -30,23 +30,13 @@ for (i = 0; i < acc.length; i++) {
         or hiding the ponel when tu button is clicked. */
         if (panel.style.display === "block") {
             panel.style.display = "none";
-            icon.src = "./CSS/images/icon.plus.svg"; // Sets the icon for the closed state
+            icon.src = "./CSS/images/icon-plus.svg"; // Sets the icon for the closed state
             icon.alt = "Open-FAQ-Icon"; // Set alt text to "open" state 
 
         } else {
             panel.style.display = "block";
-            icon.src = "./CSS/images/icon.minus.svg" // Sets the icon for the open state
+            icon.src = "./CSS/images/icon-minus.svg" // Sets the icon for the open state
             icon.alt = "Close-FAQ-Icon"; // Set alt text to "closed" state 
         }
     });
 }
-
-
-// Try this code to see if it gives the interaction an animation.
-/*
-if (panel.style.maxHeight) {
-    panel.style.maxHeight = null;
-  } else {
-    panel.style.maxHeight = panel.scrollHeight + "px";
-  }
-*/
