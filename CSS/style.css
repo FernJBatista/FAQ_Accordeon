@@ -77,6 +77,7 @@ body .background {
   z-index: 1;
   align-self: flex-start;
   justify-self: flex-start;
+  min-width: 100%;
 }
 
 main {
@@ -84,7 +85,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  width: 32rem;
+  width: 36rem;
   border-radius: 1rem;
   z-index: 2;
   align-self: center;
@@ -109,20 +110,36 @@ section {
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
+  margin-top: 1rem;
 }
-section .question-row {
+section .accordion {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 0;
   align-items: center;
-}
-section .question-row p {
+  border: 0;
+  background-color: var(--White);
+  text-align: left;
+  font-family: Work Sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--Dark-Purple);
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 0;
+}
+section:nth-child(5) {
+  border: none;
+}
+section .active, section .accordion:hover {
+  color: var(--Grayish-Purple);
 }
 section p {
   color: var(--Grayish-Purple);
   line-height: 1.5;
+}
+section .panel {
+  padding-top: 1rem;
+  display: none;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
