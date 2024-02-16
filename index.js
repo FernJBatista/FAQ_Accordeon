@@ -41,3 +41,12 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+
+// Try this code to see if it gives the interaction an animation.
+/*
+if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+*/

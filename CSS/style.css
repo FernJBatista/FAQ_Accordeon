@@ -142,4 +142,5 @@ section .panel {
   padding-top: 1rem;
   display: none;
   overflow: hidden;
+  /* 		max-height: 0; */
 }/*# sourceMappingURL=style.css.map */
